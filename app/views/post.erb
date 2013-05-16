@@ -1,0 +1,22 @@
+<div class="container">
+
+  <h1>SquirrelBlog&#0153;</h1>
+
+  <h2><%= @post_to_view.title %></h2>
+
+  <hr>
+
+  <p><%= @post_to_view.content %></p>
+
+  <% tag_array = [] %>
+
+  <% @post_to_view.tags.each do |t| %>
+    <h5><a href="/tag/<%=t.tag %>" ><%=t.tag %></a></h5>
+  <% end %>
+
+  <p class="edit">
+    <a href="/edit/<%= @post_to_view.id %>">Edit Post</a>
+    <a href="/delete/<%= @post_to_view.id %>">Delete Post</a>
+  </p>
+
+</div>
