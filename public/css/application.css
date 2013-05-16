@@ -55,6 +55,13 @@ nav ul li a {
   font-size: 18px;
 }
 
+h5 a {
+  display: block;
+  float: left;
+  margin-right: 18px;
+  height: 30px
+}
+
 nav a:hover {
   color: white;
   text-decoration: none;
@@ -95,6 +102,10 @@ footer {
 
 hr {
   border: 1px solid grey;
+}
+
+p.edit {
+  clear: both;
 }
 
 p.edit a {
