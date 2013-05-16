@@ -32,6 +32,7 @@ nav {
   padding: 20px 0;
   position: fixed;
   top: 0;
+  box-shadow: 0px 0px 20px #888;
 }
 
 nav ul {
@@ -65,7 +66,7 @@ nav a:hover {
   width: 600px;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: -10px 10px 20px #888;
+  box-shadow: 0px 0px 20px #888;
 }
 
 th {
@@ -80,6 +81,7 @@ footer {
   text-align: center;
   position: fixed;
   bottom: 0;
+  box-shadow: 0px 0px 20px #888;
 }
 
 .post {
