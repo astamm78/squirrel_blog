@@ -24,7 +24,7 @@ end
 get '/edit/:post_id' do
   @post_to_edit = Post.find(params[:post_id])
 
-  erb :edit
+  erb :edit, :layout => false
 end
 
 post '/edit/:post_id' do

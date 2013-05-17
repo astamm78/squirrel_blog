@@ -1,14 +1,10 @@
-<div class="container">
+<h1>SquirrelBlog</h1>
 
-  <h1>SquirrelBlog</h1>
+<form id ="login" action="/edit/<%= @post_to_edit.id %>" method="post">
+  <h2>Edit your post:</h2>
 
-  <form id ="login" action="/edit/<%= @post_to_edit.id %>" method="post">
-    <h2>Edit your post:</h2>
-
-    <input type="text" name="post[title]" value="<%= @post_to_edit.title %>"><br><br>
-    <textarea cols="50" rows="5" name="post[content]"><%= @post_to_edit.content %></textarea><br><br>
-    <input type="text" name="tags" value="<%= @post_to_edit.tags.map { |t| t.tag }.join(", ") %>"><br><br>
-    <input type="submit" value="Update!">
-  </form>
-
-</div>
+  <input type="text" name="post[title]" value="<%= @post_to_edit.title %>"><br><br>
+  <textarea cols="50" rows="5" name="post[content]"><%= @post_to_edit.content %></textarea><br><br>
+  <input type="text" name="tags" value="<%= @post_to_edit.tags.map { |t| t.tag }.join(", ") %>"><br><br>
+  <input type="submit" value="Update!">
+</form>
